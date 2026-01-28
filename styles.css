@@ -82,13 +82,15 @@ body {
   color: #111827;
 }
 
+* { box-sizing: content-box; }  
+
 :root {                                                                       
   --muted: #6b7280;        /* muted text */
   --bg: #f6f7fb;           /* page background */
   --card: #ffffff;         /* card/background surfaces */   
   --brand: #2563eb;
   --brand-dark: #1d4ed8;     
-  * { box-sizing: content-box; }                       
+                       
 }
 
 .site-header,
@@ -96,9 +98,9 @@ body {
   text-align: center;
   padding: 1.25rem;
   background: var(--card);
-  .tagline{color: var(--muted);}
-}
 
+}
+.tagline{color: var(--muted);}
 .container {
   max-width: 900px;
   margin: 0 auto;
